@@ -4,7 +4,7 @@ This library is a simple Image Slider which has an ability to go to the next and
 
 ## Build
 
-Run `ng build ng2-pmp-image-slider` to build the project. The build artifacts will be stored in the `dist/` directory.
+Go the project roor directory and Run `ng build ng2-pmp-image-slider` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
