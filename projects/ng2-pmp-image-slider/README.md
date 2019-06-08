@@ -10,6 +10,6 @@ Go the project roor directory and Run `ng build ng2-pmp-image-slider` to build t
 
 After building your library with `ng build ng2-pmp-image-slider`, go to the dist folder `cd dist/ng2-pmp-image-slider` and run `npm publish`.
 
-## Want see the demo?
+## Want to see a demo?
 
 [Online Demo](https://stackblitz.com/edit/angular-image-slider-online-demo)
