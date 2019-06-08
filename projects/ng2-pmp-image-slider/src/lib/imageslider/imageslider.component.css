@@ -35,3 +35,8 @@
 .pointer {
     cursor: pointer;
 }
+
+.custom-button {
+    border-radius: 27px;
+    border: 2px solid blue;
+}

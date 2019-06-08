@@ -1,11 +1,18 @@
 <div id="container">
   <div class="mat-card">
     <span (click)="prev()" class="prev">
-      Previous
+      <button class="custom-button">
+        <i class="material-icons">
+          keyboard_arrow_left
+        </i>
+      </button>
     </span>
     <span (click)="next()" class="next">
-      Next
+      <button class="custom-button">
+        <i class="material-icons">navigate_next</i>
+      </button>
     </span>
+
     <div class="imgdiv pointer">
       <img class="img-area" [src]="slideImages[0]" />
     </div>
