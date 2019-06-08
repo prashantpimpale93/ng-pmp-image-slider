@@ -1,0 +1,37 @@
+.mat-card {
+    width: 403px;
+    height: 450px;
+    padding: 20px;
+}
+
+.imgdiv {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.img-area {
+    width: 100%;
+    min-height: 100%;
+}
+
+.next {
+    float: right;
+}
+
+.prev {
+    float: left;
+}
+
+.mat-card-header {
+    display: unset !important;
+}
+
+#container {
+    text-align: -webkit-center;
+}
+
+.pointer {
+    cursor: pointer;
+}

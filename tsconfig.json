@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng2-pmp-image-slider": [
+        "dist/ng2-pmp-image-slider"
+      ],
+      "ng2-pmp-image-slider/*": [
+        "dist/ng2-pmp-image-slider/*"
+      ]
+    }
   }
 }
