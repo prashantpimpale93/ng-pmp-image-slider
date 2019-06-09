@@ -1,15 +1,56 @@
-# Ng-Pmp-Image-Slider
+# Angular-Image-Slider
 
-This library is a simple Image Slider which has an ability to go to the next and previous image {The library is under development}
+A simple Image Slider module for Angular Application {The library is under development}
 
-## Build
+* [Online Demo](https://stackblitz.com/edit/angular-image-slider-online-demo)
 
-Go the project roor directory and Run `ng build ng-pmp-image-slider` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting started
+### Installation
 
-## Publishing
+```
+npm install ng-pmp-image-slider
+```
 
-After building your library with `ng build ng-pmp-image-slider`, go to the dist folder `cd dist/ng-pmp-image-slider` and run `npm publish`.
+### Setup
+#### Import ImagesliderModule on your ```app.module.ts```:
 
-## Want to see a demo?
+```
+...
+import { ImagesliderModule } from 'ng-pmp-image-slider';
 
-[Online Demo](https://stackblitz.com/edit/angular-image-slider-online-demo)
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    ImagesliderModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+#### Add the component to your AppComponent template:
+
+```
+<pmp-image-slider [images]="imageList"></pmp-image-slider>
+```
+
+#### Add the property name as `imageList` in AppComponent.ts:
+
+```
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  imageList: string[] = ['https://images.com/img1.jpg','https://images.com/img2.jpg'] // etc
+}
+```
+
