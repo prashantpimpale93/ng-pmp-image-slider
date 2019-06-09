@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ImagePreviewComponent } from './image-preview/image-preview.component';
 
 @Component({
   selector: 'pmp-image-slider',
@@ -12,7 +14,7 @@ export class ImagesliderComponent implements OnInit {
 
   @Input() images: any;
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
     this.slideImages.push(this.images[0]);
@@ -37,6 +39,15 @@ export class ImagesliderComponent implements OnInit {
     else {
       console.log(this.lastIndex, 'Sorry! Unable to find an item to display.');
     }
+  }
+  
+  onImageClick(imageUrl: string){
+    console.log(imageUrl)
+    this.dialog.open(ImagePreviewComponent, {
+      maxWidth: '600px',
+      maxHeight: '550px',
+      data : imageUrl
+    });
   }
 
 }
