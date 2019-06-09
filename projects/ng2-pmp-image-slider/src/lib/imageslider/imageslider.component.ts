@@ -44,8 +44,8 @@ export class ImagesliderComponent implements OnInit {
   onImageClick(imageUrl: string){
     console.log(imageUrl)
     this.dialog.open(ImagePreviewComponent, {
-      maxWidth: '600px',
-      maxHeight: '550px',
+      // maxWidth: '600px',
+      // maxHeight: '400px',
       data : imageUrl
     });
   }

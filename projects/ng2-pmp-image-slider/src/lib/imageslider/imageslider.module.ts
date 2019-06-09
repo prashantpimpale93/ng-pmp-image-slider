@@ -12,7 +12,7 @@ import { ImagePreviewComponent } from './image-preview/image-preview.component';
   imports: [
     CommonModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   exports: [ImagesliderComponent],
   entryComponents:[ImagePreviewComponent]

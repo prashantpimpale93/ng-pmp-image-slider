@@ -1,21 +1,13 @@
-#image {
-    /* width: 110.60%;*/
-    /* padding: 2px; */
-    margin: 2px;
-    padding: 2px;
-}
-
-
 div {
-    width:500px;
-    /* height:500px;     */
-    overflow:hidden;
+    height: 350px;
+    width: 350px;
+    margin: -12px
 }
 
 div img {
-    min-width:100%;
-}
-
-.jack {
-    margin : -16px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
