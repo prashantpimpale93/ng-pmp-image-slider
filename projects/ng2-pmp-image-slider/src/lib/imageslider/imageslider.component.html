@@ -7,14 +7,17 @@
         </i>
       </button>
     </span>
+
     <span (click)="next()" class="next">
       <button mat-icon-button>
         <i class="material-icons">navigate_next</i>
       </button>
     </span>
-
     <div class="imgdiv pointer" (click)="onImageClick(slideImages[0])">
-      <img class="img-area" [src]="slideImages[0]" />
+      <img class="img-area" *ngIf="!loading" [src]="slideImages[0]" (load)="dosomething()" />
+      <div *ngIf="loading">
+        <mat-spinner class="center"></mat-spinner>
+      </div>
     </div>
   </div>
 </div>

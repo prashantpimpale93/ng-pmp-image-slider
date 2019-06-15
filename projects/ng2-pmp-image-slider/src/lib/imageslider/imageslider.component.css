@@ -9,6 +9,7 @@
     height: 400px;
     overflow: hidden;
     border: 1px solid black;
+    background-color: #f7f1d5;
 }
 
 .img-area {
@@ -28,15 +29,10 @@
     display: unset !important;
 }
 
-#container {
-    /* text-align: -webkit-center; */
-}
-
 .pointer {
     cursor: pointer;
 }
 
-.custom-button {
-    border-radius: 27px;
-    border: 2px solid blue;
+.center {
+    margin: 150px auto;
 }
