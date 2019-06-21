@@ -19,7 +19,7 @@ export class ImagesliderComponent implements OnInit {
 
   @Input() images: string[];
 
-  constructor(private dialog: MatDialog, private snackBar: MatSnackBar, @Inject(DOCUMENT) document) {
+  constructor(private dialog: MatDialog, private snackBar: MatSnackBar) {
     this.loading = true;
     this.snackBarConfiguration = {
       duration: 1200
@@ -30,8 +30,7 @@ export class ImagesliderComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.slideImages.push(this.images[0]);
-    console.log(this.images)
+    this.slideImages.push(this.images[this.lastIndex]);
     this.loading = false;
   }
 
@@ -40,36 +39,33 @@ export class ImagesliderComponent implements OnInit {
     this.loading = true;
     if (this.lastIndex + 1 < this.images.length) {
       this.lastIndex = this.lastIndex + 1;
+      this.slideImages = [];
       this.slideImages.splice(0, 0, this.images[this.lastIndex]);
-      this.loading = false;
     }
     else {
       this.snackBar.open('Sorry! Unable to find an item to display.', '', this.snackBarConfiguration);
-      console.log(this.lastIndex, 'Sorry! Unable to find an item to display.');
       this.loading = false;
     }
   }
 
-  dosomething() {
-    console.log('loaded')
+  onImageLoad() {
+    this.loading = false;
   }
 
   prev() {
     this.loading = true;
     if (this.lastIndex - 1 >= 0) {
       this.lastIndex = this.lastIndex - 1;
+      this.slideImages= [];
       this.slideImages.splice(0, 0, this.images[this.lastIndex]);
-      this.loading = false;
     }
     else {
       this.snackBar.open('Sorry! Unable to find an item to display.', '', this.snackBarConfiguration);
-      console.log(this.lastIndex, 'Sorry! Unable to find an item to display.');
       this.loading = false;
     }
   }
 
   onImageClick(imageUrl: string) {
-    console.log(imageUrl)
     this.dialog.open(ImagePreviewComponent, {
       data: imageUrl
     });

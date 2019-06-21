@@ -14,7 +14,9 @@
       </button>
     </span>
     <div class="imgdiv pointer" (click)="onImageClick(slideImages[0])">
-      <img class="img-area" *ngIf="!loading" [src]="slideImages[0]" (load)="dosomething()" />
+      <span *ngFor="let image of slideImages">
+        <img class="img-area" [src]="image" (load)="onImageLoad()" />
+      </span>
       <div *ngIf="loading">
         <mat-spinner class="center"></mat-spinner>
       </div>
