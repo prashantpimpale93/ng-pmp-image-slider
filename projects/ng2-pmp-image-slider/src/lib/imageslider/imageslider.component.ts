@@ -19,8 +19,6 @@ export class ImagesliderComponent implements OnInit {
 
   @Input() images: string[];
 
-  @ViewChild('image', null) input: ElementRef;
-
   constructor(private dialog: MatDialog, private snackBar: MatSnackBar, @Inject(DOCUMENT) document) {
     this.loading = true;
     this.snackBarConfiguration = {
@@ -29,7 +27,6 @@ export class ImagesliderComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.image = this.input.nativeElement;
   }
 
   ngOnInit() {
