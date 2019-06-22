@@ -21,4 +21,4 @@ import { ImagePreviewComponent } from './image-preview/image-preview.component';
   exports: [ImagesliderComponent],
   entryComponents: [ImagePreviewComponent]
 })
-export class ImagesliderModule { }
+export class ImageSliderModule { }

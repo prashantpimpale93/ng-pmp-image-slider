@@ -1,8 +1,7 @@
-import { Component, OnInit, Input, ElementRef, ViewChild, Inject } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'pmp-image-slider',
@@ -15,7 +14,6 @@ export class ImagesliderComponent implements OnInit {
   public lastIndex: number = 0;
   public loading: boolean = false;
   public snackBarConfiguration: MatSnackBarConfig;
-  public image = new Image;
 
   @Input() images: string[];
 
