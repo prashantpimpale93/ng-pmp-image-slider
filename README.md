@@ -4,6 +4,12 @@ A simple Image Slider module for Angular Application {The library is under devel
 
 * [Online Demo](https://stackblitz.com/edit/angular-image-slider-online-demo)
 
+* Features:
+
+1) Image preview option - (Image will be displayed in the Dialog box)
+2) It shows progress bar until the image has not been loaded properly
+
+
 ## Getting started
 ### Installation
 
@@ -12,11 +18,11 @@ npm install ng-pmp-image-slider
 ```
 
 ### Setup
-#### Import ImagesliderModule on your ```app.module.ts```:
+#### Import ImageSliderModule on your ```app.module.ts```:
 
 ```
 ...
-import { ImagesliderModule } from 'ng-pmp-image-slider';
+import { ImageSliderModule } from 'ng-pmp-image-slider';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,7 @@ import { ImagesliderModule } from 'ng-pmp-image-slider';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ImagesliderModule
+    ImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -53,4 +59,3 @@ export class AppComponent {
   imageList: string[] = ['https://images.com/img1.jpg','https://images.com/img2.jpg'] // etc
 }
 ```
-
