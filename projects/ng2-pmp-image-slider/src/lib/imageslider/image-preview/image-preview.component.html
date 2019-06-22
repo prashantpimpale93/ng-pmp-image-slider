@@ -1,3 +1,6 @@
 <div *ngIf="imageUrl">
+  <i id="close-icon" class="material-icons" (click)="close()">
+    close
+  </i>
   <img id="image" [src]="imageUrl" alt="Image">
 </div>

@@ -1,6 +1,7 @@
 div {
     height: 350px;
     width: 350px;
+    position: relative;
     margin: -12px
 }
 
@@ -10,4 +11,14 @@ div img {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+#close-icon {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
