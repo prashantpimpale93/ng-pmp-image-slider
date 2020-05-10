@@ -59,3 +59,5 @@ export class AppComponent {
   imageList: string[] = ['https://images.com/img1.jpg','https://images.com/img2.jpg'] // etc
 }
 ```
+
+#### I will always appreciate for issues and contributions!
