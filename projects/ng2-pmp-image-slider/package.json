@@ -6,11 +6,17 @@
     "@angular/core": "^8.0.0"
   },
   "author": "Prashant Pimpale",
+  "homepage": "https://github.com/prashantpimpale93/ng-pmp-image-slider",
+  "bugs": {
+    "url": "https://github.com/prashantpimpale93/ng-pmp-image-slider/issues"
+  },
   "keywords": [
     "angular2",
     "angular",
     "image-slider",
-    "material-image-slider"
+    "material-image-slider",
+    "ng2",
+    "angular8"
   ],
   "repository": {
     "type" : "git",
