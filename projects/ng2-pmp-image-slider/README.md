@@ -59,3 +59,12 @@ export class AppComponent {
   imageList: string[] = ['https://images.com/img1.jpg','https://images.com/img2.jpg'] // etc
 }
 ```
+### Options:
+
+```autoslide```:
+To enable auto slide images based on flag, defualt value `false`.
+
+```duration```:
+Takes number value in milisecond, which is configurable, defualt value `5000 ms (5 seconds)`.
+
+
